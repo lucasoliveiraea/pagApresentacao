@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #c0b8b8;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: url(./pexels-uzunov-rostislav-5011647.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /* background-image: linear-gradient(90deg, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F, #F9F871) */
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    /* border-bottom: 2px solid blanchedalmond; */
+    box-shadow: 1px 1px 10px 1px blanchedalmond;
+    /* border-bottom: 15px ridge blanchedalmond; */
+    margin-bottom: 45px;
+}
+
+header div img {
+    width: 75%;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li {
+    padding: 5px;
+    border-right: 2px solid blanchedalmond;
+}
+
+header ul li:first-child {
+    border-left: 2px solid blanchedalmond;
+}
+
+header ul li a {
+    transition: 200ms;
+}
+
+header ul li a:hover {
+    color: bisque;
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+}
+
+.container .name h1 {
+    font-size: 60px;
+}
+
+.container .name h5 {
+    font-size: 25px;
+}
+
+#arrow {
+    font-size: 35px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form {
+    width: 40%;
+    margin: 0 auto;
+    /* border: thick double blanchedalmond; */
+    /* border: thick ridge blanchedalmond; */
+    margin-top: 30px;
+}
+
+.form input {
+    width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.form button {
+    width: 15%;
+    padding: 5px 10px;
+    /* background-color: #c0b8b8; */
+    background: linear-gradient(to right, #ed6521 50%, #bcbc91 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #2c2a2a;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    /* transition: 500ms; */
+    transition: all 300ms ease-out;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 20px;
+    margin-left: -4px;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    color: #ffffff;
+}
+
+/* @media only screen and (max-width: 7680px) {
+    .form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container .name h1 {
+        font-size: 30px;
+    }
+    
+    .container .name h5 {
+        font-size: 15px;
+    }
+
+    #about p {
+        max-width: 80%;
+        text-align: justify;
+        margin: 0 auto;
+    }
+} */
